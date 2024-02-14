@@ -82,26 +82,15 @@
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
 						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="#">Story</a></li>
 						<li class="has-dropdown">
-							<a href="#">Services</a>
-							<ul class="dropdown">
-								<li><a href="#">Web Design</a></li>
-								<li><a href="#">eCommerce</a></li>
-								<li><a href="#">Branding</a></li>
-								<li><a href="#">API</a></li>
-							</ul>
+							<a href="#fh5co-event">Events</a>
 						</li>
+						<li><a href="#fh5co-couple-story">Story</a></li>
+					
 						<li class="has-dropdown">
-							<a href="">Gallery</a>
-							<ul class="dropdown">
-								<li><a href="#">HTML5</a></li>
-								<li><a href="#">CSS3</a></li>
-								<li><a href="#">Sass</a></li>
-								<li><a href="#">jQuery</a></li>
-							</ul>
+							<a href="#fh5co-gallery">Gallery</a>
 						</li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#fh5co-started">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -119,7 +108,7 @@
 							<h1>Hafizh &amp; Ara</h1>
 							<h2>We Are Getting Married</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
-							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
+							<p><a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NHVybjA5azdzYW80cGltZGk2aTRvNzI1djkgaW1hbWxvbDMzMkBt&tmsrc=imamlol332%40gmail.com" class="btn btn-default btn-sm">Save the date</a></p>
 						</div>
 					</div>
 				</div>
@@ -178,8 +167,8 @@
 									<h3>Akad</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
-										<span>9:00 AM</span>
-										<span>2:00 PM</span>
+										<span>13:00 PM</span>
+										<span>13:40 PM</span>
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
@@ -194,8 +183,8 @@
 									<h3>Resepsi</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
-										<span>11:00 AM</span>
-										<span>12:00 AM</span>
+										<span>13:40 PM</span>
+										<span>selesai</span>
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
@@ -380,14 +369,11 @@
 				<div class="col-md-12 text-center">
 					<p>
 						<small class="block">&copy; 2024 . All Rights Reserved.</small> 
-						<small class="block">Designed by <a href="" target="_blank"></a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
+
 					</p>
 					<p>
 						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+					
 						</ul>
 					</p>
 				</div>
@@ -426,20 +412,24 @@
 	<script src="js/main.js"></script>
 
 	<script>
-    var d = new Date(new Date().getTime());
+    var d = new Date(new Date().getTime()+  100 * 120 * 120 * 1789);
 
     // default example
     simplyCountdown('.simply-countdown-one', {
         year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
+        month: d.getMonth(),
+        day: d.getDate(),
+		hours: d.getHours() - 6,
+		minutes: d.getMinutes() + 4
     });
 
     //jQuery example
     $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
+        year: 2024,
+        month: 0,
+        day: 0,
+		hours: 6,
+		minutes: 30,
         enableUtc: false
     });
 </script>
